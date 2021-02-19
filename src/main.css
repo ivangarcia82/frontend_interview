@@ -22,6 +22,67 @@ body {
     font-weight: 700;
 }
 
+
+.footer {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    padding: 20px;
+    height: 65px;
+    width: 100%;
+    background-color: black;
+  }
+  
+
+  .footer__left {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 300px;
+    flex: 0.3;
+  }
+
+  
+  .footer__center {
+    flex: 0.4;
+    max-width: 300px;
+    padding: 0 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer__icon:hover,
+  .footer__green:hover {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+  }
+  
+  .footer__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex: 0.3;
+  }
+  
+  .footer__albumLogo {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    object-fit: contain;
+  }
+  
+  .footer__songInfo > h4 {
+    margin-bottom: 5px;
+  }
+  
+  .footer__songInfo > p {
+    font-size: 12px;
+  }
+
+
 .sidebar {
     background-color: #564fd0;
     padding: 24px 24px 0 24px;
@@ -133,17 +194,18 @@ body {
 }
 
 .header {
-    position: fixed;
     top: 0;
     left: 230px; /* sidebar width */
     right: 0;
-    height: 60px;
+    height: 150px;
     padding-left: 24px;
     padding-right: 24px;
+    padding-bottom: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+    background-color:#F4B8AA;
 }
 
 .header--bg {
@@ -250,29 +312,32 @@ body {
 }
 
 main {
-    padding: 80px 32px 32px 262px;
+    padding: 150px 20px 15px 262px;
     max-height: 100vh;
-    min-height: 100vh;
+    min-height: 30px;
     /* background: dodgerblue; */
     overflow-y: auto;
 }
 
-main::-webkit-scrollbar {
-    width: 16px;
+.header--banner{
+    margin-top: 120px;
 }
 
-main::-webkit-scrollbar-thumb {
-    background-color: #909090;
+.image{
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+    margin-left: 170px;
+    margin-top: 140px;
+    
 }
 
-main::-webkit-scrollbar-track {
-    background-color: rgb(18, 18, 18);
-}
 
 
 
 
-/*  PART 3 */
+
 .header--actions {
     display: flex;
     align-items: center;
@@ -332,16 +397,14 @@ main::-webkit-scrollbar-track {
 }
 
 main {
-    background-color: rgb(18, 18, 18);
+    background-color: white;
 }
 
-.section {
-    margin-bottom: 35px;
-}
 
 .title {
     font-size: 1.75rem;
     margin-top: 0;
+    color: black;
 }
 
 .section--body {
@@ -418,7 +481,7 @@ main {
 }
 
 main .section .subtitle {
-    color: #b3b3b3;
+    color: black;
     font-size: 1rem;
     margin-top: -8px;
     font-weight: 100;
@@ -432,7 +495,7 @@ main .section .subtitle {
 a.section--header--right--more,
 .section--body--item--subtitle,
 .section--body--item--subtitle a {
-    color: #b3b3b3;
+    color: gray;
     font-size: 0.8rem;
     text-decoration: none;
 }
@@ -477,6 +540,7 @@ a.section--header--right--more {
     font-size: 0.9rem;
     text-overflow: ellipsis;
     overflow-x: hidden;
+    color: black;
     white-space: nowrap;
 }
 

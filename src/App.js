@@ -1,26 +1,24 @@
 import NavBar from './NavBar'
 import Header from './Header';
+import React from 'react'
 import NewReleases from './NewReleases'
-import getAuth from './config'
-import React, {useEffect} from 'react'
+import FeaturedPlaylists from './FeaturedPlaylists'
+import Categories from './Categories';
+import Bottom from './Bottom'
+
 
 
 function App() {
-  useEffect(() => {
-    getAuth();
-  }, [])
+ 
     
   return (
     <>
       <NavBar/>
       <Header />
-      <NewReleases />
-      {/* FEATURED PLAYLISTS */}
-      {/* BROWSE GENRES */}
-
-
-
-
+      <NewReleases/>
+      <FeaturedPlaylists/>
+      <Categories />
+      <Bottom />
     </>
   );
 }
