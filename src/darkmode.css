@@ -4,17 +4,13 @@ html {
 
 body {
     margin: 0;
-    color: #fff;
+    color:white;
     
 }
 
-.dark-theme {
-    background-color: black;
-  }
 
-  .sunicon{
-    color:#FFA500;
-}
+
+
 
 * {
     box-sizing: border-box;
@@ -39,7 +35,7 @@ body {
     padding: 20px;
     height: 65px;
     width: 100%;
-    background-color: black;
+    background-color: white;
     z-index: 1;
   }
   
@@ -47,7 +43,7 @@ body {
   .footer__left {
     display: flex;
     align-items: center;
-    color: white;
+    color: black;
     width: 300px;
     flex: 0.3;
   }
@@ -57,7 +53,7 @@ body {
     flex: 0.4;
     max-width: 300px;
     padding: 0 100px;
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,14 +64,7 @@ body {
     transition: transform 0.2s ease-in-out;
     transform: scale(1.2) !important;
   }
-  
-  .footer__right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    flex: 0.3;
-  }
+
   
   .footer__albumLogo {
     height: 60px;
@@ -182,6 +171,9 @@ body {
     margin-top: 16px;
 }
 
+.sunicon{
+    color:#FFA500;
+}
 .sidebar .menu.menu-playlist .menu--item--text {
     font-weight: 400;
     margin-left: 0;
@@ -207,7 +199,7 @@ body {
     top: 0;
     left: 230px; /* sidebar width */
     right: 0;
-    height: 150px;
+    height: 204px;
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 150px;
@@ -215,7 +207,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 2;
-    background-color:#F4B8AA;
+    background-color:gray;
 }
 
 .header--bg {
@@ -325,7 +317,6 @@ main {
     padding: 40px 20px 15px 262px;
     max-height: 100vh;
     min-height: 30px;
-    /* background: dodgerblue; */
 }
 
 .header--banner{
@@ -339,7 +330,6 @@ main {
     max-height: 300px;
     margin-left: 170px;
     margin-top: 140px;
-    
 }
 
 
@@ -406,14 +396,14 @@ main {
 }
 
 main {
-    background-color: white;
+    background-color: black;
 }
 
 
 .title {
     font-size: 1.75rem;
     margin-top: 0;
-    color: black;
+    color: white;
 }
 
 .section--body {
@@ -490,7 +480,7 @@ main {
 }
 
 main .section .subtitle {
-    color: black;
+    color: white;
     font-size: 1rem;
     margin-top: -8px;
     font-weight: 100;
@@ -549,7 +539,7 @@ a.section--header--right--more {
     font-size: 0.9rem;
     text-overflow: ellipsis;
     overflow-x: hidden;
-    color: black;
+    color: white;
     white-space: nowrap;
 }
 

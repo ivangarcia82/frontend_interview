@@ -4,6 +4,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Credentials } from './config';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 
 
@@ -48,7 +50,7 @@ function NewReleases() {
                 <h2 className="title">Released This Week</h2>
             </div>
             <div className="section--header--right">
-                <a  className="section--header--right--more">flechas</a>
+            <a  className="section--header--right--more"><ChevronLeftIcon/><ChevronRightIcon/></a>
             </div>
         </div>
         <div className="section--body">
