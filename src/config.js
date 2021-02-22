@@ -1,10 +1,8 @@
-
 const Credentials = () => {
-
   return {
-      ClientId: 'e879de77d562402b871136c47c23b97c',
-      ClientSecret: 'daa7fbeb4fba41fb9eeeadff108bdb1e'
-  }
-}
+    ClientId: "INGRESAR_CLIENT_ID",
+    ClientSecret: "INGRESAR_CLIENT_SECRET",
+  };
+};
 
 export { Credentials };
